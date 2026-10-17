@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Карточки",
+    "slug": "nemor-cards",
+    "scheme": "nemorcards",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b1020"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alrevion.nemorcards"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-sqlite",
+      "expo-asset",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

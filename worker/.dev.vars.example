@@ -1,0 +1,10 @@
+# Local development secrets for `wrangler dev`. Copy to `.dev.vars` and fill in.
+# In production these are set via `wrangler secret put <NAME>` (never committed).
+#
+# OPENROUTER_PROXY_KEY: the OpenRouter proxy key (bearer token sent to the
+#   OpenRouter-compatible proxy at OPENROUTER_PROXY_URL).
+OPENROUTER_PROXY_KEY="REPLACE_WITH_OPENROUTER_PROXY_KEY"
+#
+# AUTH_API_KEY: must be created in the alrevion auth-api (a `client` row plus an
+#   `api_keys` row). Sent as the X-API-Key header on every auth proxy call.
+AUTH_API_KEY="REPLACE_WITH_ALREVION_SERVICE_API_KEY"

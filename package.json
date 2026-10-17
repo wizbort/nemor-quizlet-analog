@@ -1,0 +1,14 @@
+{
+  "name": "nemor-cards",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nemor Cards (Карточки) — a Quizlet analog: Expo web/native client + Cloudflare Worker BFF on D1.",
+  "scripts": {
+    "install:all": "cd app && npm install && cd ../worker && npm install",
+    "build:web": "cd app && npm run export:web",
+    "dev:worker": "cd worker && npx wrangler dev",
+    "deploy": "npm run build:web && cd worker && npx wrangler deploy",
+    "db:init": "cd worker && npx wrangler d1 execute nemor-cards --file=./schema.sql",
+    "db:init:remote": "cd worker && npx wrangler d1 execute nemor-cards --remote --file=./schema.sql"
+  }
+}
